@@ -1,2 +1,12 @@
-because the plagiarism checker tool is terrible and it often has trouble checking the plagiarism of functions and code variables so I have to push my code to git and it's there please check it and give me points.
-https://github.com/John-0404/Web-coursera/blob/main/Autocomplete.js
+function billingFunction(){
+  var name = document.getElementById('shippingName').value;
+  var zipCode = document.getElementById('shippingZip').value;
+  if(document.getElementById('same').checked){
+    document.getElementById('billingName').value = name;
+    document.getElementById('billingZip').value = zipCode;
+  }
+  else {
+    document.getElementById('billingName').value=null;
+    document.getElementById('billingZip').value=null;
+  }
+}
